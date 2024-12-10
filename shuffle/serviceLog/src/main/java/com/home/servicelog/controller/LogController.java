@@ -1,8 +1,7 @@
 package com.home.servicelog.controller;
 
 import com.home.servicelog.model.LogRequest;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.home.servicelog.service.LoggingService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,12 +9,15 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/log")
 public class LogController {
 
-    private static final Logger logger = LoggerFactory.getLogger(LogController.class);
+    private final LoggingService loggingService;
+
+    public LogController(LoggingService loggingService) {
+        this.loggingService = loggingService;
+    }
 
     @PostMapping
     public ResponseEntity<Void> logRequest(@RequestBody LogRequest logRequest) {
-        logger.info("Received log request: number={}, result={}",
-                logRequest.getNumber(), logRequest.getResult());
+        loggingService.logRequest(logRequest);
         return ResponseEntity.ok().build();
     }
 }
