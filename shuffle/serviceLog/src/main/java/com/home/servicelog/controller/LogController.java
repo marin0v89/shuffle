@@ -1,5 +1,6 @@
 package com.home.servicelog.controller;
 
+import com.home.servicelog.model.LogRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -16,26 +17,5 @@ public class LogController {
         logger.info("Received log request: number={}, result={}",
                 logRequest.getNumber(), logRequest.getResult());
         return ResponseEntity.ok().build();
-    }
-
-    private static class LogRequest {
-        private int number;
-        private int[] result;
-
-        public int getNumber() {
-            return number;
-        }
-
-        public void setNumber(int number) {
-            this.number = number;
-        }
-
-        public int[] getResult() {
-            return result;
-        }
-
-        public void setResult(int[] result) {
-            this.result = result;
-        }
     }
 }
