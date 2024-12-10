@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+
+service-log:
+  base-url: http://localhost:8081/log
