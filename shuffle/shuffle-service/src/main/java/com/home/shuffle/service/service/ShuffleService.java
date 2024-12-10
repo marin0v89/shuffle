@@ -1,6 +1,6 @@
-package com.home.serviceshuffle.service;
+package com.home.shuffle.service.service;
 
-import com.home.serviceshuffle.model.LogRequest;
+import com.home.shuffle.service.model.LogRequest;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;

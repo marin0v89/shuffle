@@ -1,4 +1,4 @@
-package com.home.serviceshuffle.model;
+package com.home.shuffle.service.model;
 
 public class LogRequest {
 

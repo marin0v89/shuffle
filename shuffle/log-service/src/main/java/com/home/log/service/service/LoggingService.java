@@ -1,6 +1,6 @@
-package com.home.servicelog.service;
+package com.home.log.service.service;
 
-import com.home.servicelog.model.LogRequest;
+import com.home.log.service.model.LogRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

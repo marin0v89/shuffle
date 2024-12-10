@@ -1,4 +1,4 @@
-package com.home.servicelog.model;
+package com.home.log.service.model;
 
 public class LogRequest {
     private int number;

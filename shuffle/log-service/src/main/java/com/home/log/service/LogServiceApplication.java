@@ -1,13 +1,11 @@
-package com.home.serviceshuffle;
+package com.home.log.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ShuffleServiceApplication {
-
+public class LogServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ShuffleServiceApplication.class, args);
+        SpringApplication.run(LogServiceApplication.class, args);
     }
-
 }

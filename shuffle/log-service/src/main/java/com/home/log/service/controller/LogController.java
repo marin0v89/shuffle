@@ -1,7 +1,7 @@
-package com.home.servicelog.controller;
+package com.home.log.service.controller;
 
-import com.home.servicelog.model.LogRequest;
-import com.home.servicelog.service.LoggingService;
+import com.home.log.service.model.LogRequest;
+import com.home.log.service.service.LoggingService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
