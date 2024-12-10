@@ -7,8 +7,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>serviceLog</module>
-        <module>serviceShuffle</module>
+        <module>log-service</module>
+        <module>shuffle-service</module>
     </modules>
 
     <dependencyManagement>
